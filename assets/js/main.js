@@ -211,7 +211,7 @@ $(document).ready(function($) {
 	}
 	ytpPlayer();
 
-	function supportForm() {
+	var supportForm = function() {
 		$.ajax({
 		    url: "https://formspree.io/hello@renovir.co",
 		    method: "POST",
