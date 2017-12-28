@@ -565,6 +565,7 @@
                 <input type="submit" class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0" value="Send Message" onclick="supportForm()">
               </div>
             </form>
+            <p style="display: none" id="form-submitted">Form Submitted, We will get back within 16 hours.</p>
           </div>
           <div class="col-md-4">
             <ul class="pb_contact_details_v1">
@@ -635,6 +636,7 @@
 				    data: {message: "Name :" + document.getElementById("name").value + " | Email : " + document.getElementById("email").value + " | Message : " + document.getElementById("message").value},
 				    dataType: "json"
 				});
+				document.getElementById("form-submitted").style = "color: #1d82ff; display: block;";
 			}
 	</script>
 	</body>
