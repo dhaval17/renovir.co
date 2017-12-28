@@ -211,14 +211,14 @@ $(document).ready(function($) {
 	}
 	ytpPlayer();
 
-
-	$.ajax({
-	    url: "https://formspree.io/hello@renovir.co",
-	    method: "POST",
-	    data: {message: "Name :" + document.getElementById("name").value + " | Email : " + document.getElementById("email").value + " | Message : " + document.getElementById("message").value},
-	    dataType: "json"
-	});
-
+	function supportForm() {
+		$.ajax({
+		    url: "https://formspree.io/hello@renovir.co",
+		    method: "POST",
+		    data: {message: "Name :" + document.getElementById("name").value + " | Email : " + document.getElementById("email").value + " | Message : " + document.getElementById("message").value},
+		    dataType: "json"
+		});
+	}
 
 });
 
